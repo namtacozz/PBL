@@ -1,0 +1,392 @@
+ATM.cpp: In function 'int findAccount(std::string, std::string*, int)':
+ATM.cpp:75:19: error: expected ')' before string constant
+   75 |         if(accNums" << BLUE << "[i]" << RESET << " == accNum) return i;
+      |           ~       ^~~~~~~~~~~~~~
+      |                   )
+StartUp.cpp: In function 'bool authenticateSecret(std::string)':
+StartUp.cpp:18:17: error: expected primary-expression before '<<' token
+   18 |         cout << << RED << "[X]" << RESET << " Invalid Code! System halting.\n";
+      |                 ^~
+StartUp.cpp: In function 'void loadAccountData(std::string*, std::string*, double*, int*, bool*, double*, int&)':
+StartUp.cpp:32:20: error: expected ';' before string constant
+   32 |             accNums" << BLUE << "[i]" << RESET << " = accs" << BLUE << "[i]" << RESET << "; pins" << BLUE << "[i]" << RESET << " = ps" << BLUE << "[i]" << RESET << "; bals" << BLUE << "[i]" << RESET << " = bs" << BLUE << "[i]" << RESET << ";
+      |                    ^~~~~~~~~~~~~~
+      |                    ;
+StartUp.cpp:32:97: error: expected ';' before string constant
+   32 |             accNums" << BLUE << "[i]" << RESET << " = accs" << BLUE << "[i]" << RESET << "; pins" << BLUE << "[i]" << RESET << " = ps" << BLUE << "[i]" << RESET << "; bals" << BLUE << "[i]" << RESET << " = bs" << BLUE << "[i]" << RESET << ";
+      |                                                                                                 ^~~~~~~~~~~~~~
+      |                                                                                                 ;
+StartUp.cpp:32:172: error: expected ';' before string constant
+   32 |             accNums" << BLUE << "[i]" << RESET << " = accs" << BLUE << "[i]" << RESET << "; pins" << BLUE << "[i]" << RESET << " = ps" << BLUE << "[i]" << RESET << "; bals" << BLUE << "[i]" << RESET << " = bs" << BLUE << "[i]" << RESET << ";
+      |                                                                                                                                                                            ^~~~~~~~~~~~~~
+      |                                                                                                                                                                            ;
+StartUp.cpp:33:22: error: expected ';' before string constant
+   33 |             dailyCnts" << BLUE << "[i]" << RESET << " = 0; locks" << BLUE << "[i]" << RESET << " = false; dailyAmts" << BLUE << "[i]" << RESET << " = 0;
+      |                      ^~~~~~~~~~~~~~
+      |                      ;
+StartUp.cpp:33:65: error: expected ';' before string constant
+   33 |             dailyCnts" << BLUE << "[i]" << RESET << " = 0; locks" << BLUE << "[i]" << RESET << " = false; dailyAmts" << BLUE << "[i]" << RESET << " = 0;
+      |                                                                 ^~~~~~~~~~~~~~
+      |                                                                 ;
+StartUp.cpp:33:116: error: expected ';' before string constant
+   33 |             dailyCnts" << BLUE << "[i]" << RESET << " = 0; locks" << BLUE << "[i]" << RESET << " = false; dailyAmts" << BLUE << "[i]" << RESET << " = 0;
+      |                                                                                                                    ^~~~~~~~~~~~~~
+      |                                                                                                                    ;
+StartUp.cpp: In function 'void startATM(std::string*, std::string*, double*, int*, bool*, double*, int&, int&, int&, int&)':
+StartUp.cpp:52:13: error: expected primary-expression before '<<' token
+   52 |     cout << << GREEN << "[V]" << RESET << " System Ready. Date: " << padZero(d) << "/" << padZero(m) << "/" << y << "\n";
+      |             ^~
+Shutdown.cpp: In function 'void updateAccountsData(std::string*, std::string*, double*, bool*, int, bool)':
+Shutdown.cpp:13:28: error: expected ';' before string constant
+   13 |             file << accNums" << BLUE << "[i]" << RESET << " << " " << pins" << BLUE << "[i]" << RESET << " << " " << (long long)bals" << BLUE << "[i]" << RESET << " << " "
+      |                            ^~~~~~~~~~~~~~
+      |                            ;
+Shutdown.cpp: In function 'void saveTransactionData(std::string*, std::string*, double*, std::string*, int, int, int, int)':
+Shutdown.cpp:28:27: error: expected ';' before string constant
+   28 |             file << tTimes" << BLUE << "[i]" << RESET << " << " | " << tAccs" << BLUE << "[i]" << RESET << " << " | " << tTypes" << BLUE << "[i]" << RESET << " << " | " << (long long)tAmts" << BLUE << "[i]" << RESET << " << "\n";
+      |                           ^~~~~~~~~~~~~~
+      |                           ;
+Shutdown.cpp: In function 'void shutdown(std::string*, std::string*, double*, bool*, int, std::string*, std::string*, double*, std::string*, int, int&, int&, int&)':
+Shutdown.cpp:44:13: error: expected primary-expression before '<<' token
+   44 |     cout << << YELLOW << "[*]" << RESET << " KNPBANK Server is now OFFLINE. Goodnight, Sir!\n";
+      |             ^~
+In file included from C:/msys64/ucrt64/include/wtypes.h:8,
+                 from C:/msys64/ucrt64/include/winscard.h:10,
+                 from C:/msys64/ucrt64/include/windows.h:97,
+                 from Utils.cpp:115:
+C:/msys64/ucrt64/include/rpcndr.h:94:11: error: reference to 'byte' is ambiguous
+   94 |   typedef byte cs_byte;
+      |           ^~~~
+In file included from C:/msys64/ucrt64/include/c++/15.2.0/bits/memory_resource.h:40,
+                 from C:/msys64/ucrt64/include/c++/15.2.0/string:72,
+                 from Utils.h:4,
+                 from Utils.cpp:1:
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:432:170: error: reference to 'byte' is ambiguous
+  432 |   typedef void (__RPC_API *CS_TYPE_TO_NETCS_ROUTINE)(RPC_BINDING_HANDLE hBinding,unsigned __LONG32 ulNetworkCodeSet,void *pLocalData,unsigned __LONG32 ulLocalDataLength,byte *pNetworkData,unsigned __LONG32 *pulNetworkDataLength,error_status_t *pStatus);
+      |                                                                                                                                                                          ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:432:170: error: 'byte' has not been declared
+  432 |   typedef void (__RPC_API *CS_TYPE_TO_NETCS_ROUTINE)(RPC_BINDING_HANDLE hBinding,unsigned __LONG32 ulNetworkCodeSet,void *pLocalData,unsigned __LONG32 ulLocalDataLength,byte *pNetworkData,unsigned __LONG32 *pulNetworkDataLength,error_status_t *pStatus);
+      |                                                                                                                                                                          ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:433:119: error: reference to 'byte' is ambiguous
+  433 |   typedef void (__RPC_API *CS_TYPE_FROM_NETCS_ROUTINE)(RPC_BINDING_HANDLE hBinding,unsigned __LONG32 ulNetworkCodeSet,byte *pNetworkData,unsigned __LONG32 ulNetworkDataLength,unsigned __LONG32 ulLocalBufferSize,void *pLocalData,unsigned __LONG32 *pulLocalDataLength,error_status_t *pStatus);
+      |                                                                                                                       ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:433:119: error: 'byte' has not been declared
+  433 |   typedef void (__RPC_API *CS_TYPE_FROM_NETCS_ROUTINE)(RPC_BINDING_HANDLE hBinding,unsigned __LONG32 ulNetworkCodeSet,byte *pNetworkData,unsigned __LONG32 ulNetworkDataLength,unsigned __LONG32 ulLocalBufferSize,void *pLocalData,unsigned __LONG32 *pulLocalDataLength,error_status_t *pStatus);
+      |                                                                                                                       ^~~~
+In file included from C:/msys64/ucrt64/include/combaseapi.h:153,
+                 from C:/msys64/ucrt64/include/objbase.h:14,
+                 from C:/msys64/ucrt64/include/ole2.h:17,
+                 from C:/msys64/ucrt64/include/wtypes.h:13:
+C:/msys64/ucrt64/include/wtypesbase.h:319:5: error: reference to 'byte' is ambiguous
+  319 |     byte abData[1];
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/wtypesbase.h:341:5: error: reference to 'byte' is ambiguous
+  341 |     byte abData[1];
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/wtypesbase.h:356:5: error: reference to 'byte' is ambiguous
+  356 |     byte *pData;
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+In file included from C:/msys64/ucrt64/include/combaseapi.h:155:
+C:/msys64/ucrt64/include/objidlbase.h:1993:5: error: reference to 'byte' is ambiguous
+ 1993 |     byte *pv,
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/objidlbase.h:1993:5: error: 'byte' has not been declared
+ 1993 |     byte *pv,
+      |     ^~~~
+C:/msys64/ucrt64/include/objidlbase.h:2003:11: error: reference to 'byte' is ambiguous
+ 2003 |     const byte *pv,
+      |           ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/objidlbase.h:2018:5: error: reference to 'byte' is ambiguous
+ 2018 |     byte *pv,
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/objidlbase.h:2018:5: error: 'byte' has not been declared
+ 2018 |     byte *pv,
+      |     ^~~~
+C:/msys64/ucrt64/include/objidlbase.h:2028:11: error: reference to 'byte' is ambiguous
+ 2028 |     const byte *pv,
+      |           ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+In file included from C:/msys64/ucrt64/include/unknwn.h:47,
+                 from C:/msys64/ucrt64/include/objidl.h:759,
+                 from C:/msys64/ucrt64/include/objbase.h:66:
+C:/msys64/ucrt64/include/wtypes.h:46:5: error: reference to 'byte' is ambiguous
+   46 |     byte data[1];
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/wtypes.h:54:5: error: reference to 'byte' is ambiguous
+   54 |     byte data[1];
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/wtypes.h:59:5: error: reference to 'byte' is ambiguous
+   59 |     byte data[1];
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/wtypes.h:63:5: error: reference to 'byte' is ambiguous
+   63 |     byte data[1];
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/wtypes.h:68:5: error: reference to 'byte' is ambiguous
+   68 |     byte data[1];
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/wtypes.h:73:5: error: reference to 'byte' is ambiguous
+   73 |     byte data[1];
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/wtypes.h:299:5: error: reference to 'byte' is ambiguous
+  299 |     byte pBuffer[1];
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/objidl.h:8445:9: error: reference to 'byte' is ambiguous
+ 8445 |         byte *pbData,
+      |         ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/objidl.h:8445:9: error: 'byte' has not been declared
+ 8445 |         byte *pbData,
+      |         ^~~~
+C:/msys64/ucrt64/include/objidl.h:8953:5: error: reference to 'byte' is ambiguous
+ 8953 |     byte *reserved1,
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/objidl.h:8953:5: error: 'byte' has not been declared
+ 8953 |     byte *reserved1,
+      |     ^~~~
+C:/msys64/ucrt64/include/objidl.h:8977:5: error: reference to 'byte' is ambiguous
+ 8977 |     byte *reserved2,
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/objidl.h:8977:5: error: 'byte' has not been declared
+ 8977 |     byte *reserved2,
+      |     ^~~~
+C:/msys64/ucrt64/include/objidl.h:8996:5: error: reference to 'byte' is ambiguous
+ 8996 |     byte *reserved1,
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/objidl.h:8996:5: error: 'byte' has not been declared
+ 8996 |     byte *reserved1,
+      |     ^~~~
+C:/msys64/ucrt64/include/objidl.h:9022:5: error: reference to 'byte' is ambiguous
+ 9022 |     byte *reserved2,
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/objidl.h:9022:5: error: 'byte' has not been declared
+ 9022 |     byte *reserved2,
+      |     ^~~~
+C:/msys64/ucrt64/include/objidl.h:9477:5: error: reference to 'byte' is ambiguous
+ 9477 |     byte *pv,
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/objidl.h:9477:5: error: 'byte' has not been declared
+ 9477 |     byte *pv,
+      |     ^~~~
+C:/msys64/ucrt64/include/objidl.h:9488:11: error: reference to 'byte' is ambiguous
+ 9488 |     const byte *pv,
+      |           ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/objidl.h:9505:5: error: reference to 'byte' is ambiguous
+ 9505 |     byte *pv,
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/objidl.h:9505:5: error: 'byte' has not been declared
+ 9505 |     byte *pv,
+      |     ^~~~
+C:/msys64/ucrt64/include/objidl.h:9517:11: error: reference to 'byte' is ambiguous
+ 9517 |     const byte *pv,
+      |           ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/objidl.h:9925:5: error: reference to 'byte' is ambiguous
+ 9925 |     byte data[1];
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/objidl.h:11390:11: error: reference to 'byte' is ambiguous
+11390 |     const byte *pv,
+      |           ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/objidl.h:11401:11: error: reference to 'byte' is ambiguous
+11401 |     const byte *pv,
+      |           ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/objidl.h:11416:11: error: reference to 'byte' is ambiguous
+11416 |     const byte *pv,
+      |           ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+C:/msys64/ucrt64/include/objidl.h:11428:11: error: reference to 'byte' is ambiguous
+11428 |     const byte *pv,
+      |           ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~
+In file included from C:/msys64/ucrt64/include/msxml.h:303,
+                 from C:/msys64/ucrt64/include/urlmon.h:450,
+                 from C:/msys64/ucrt64/include/objbase.h:163:
+C:/msys64/ucrt64/include/oaidl.h:579:5: error: reference to 'byte' is ambiguous
+  579 |     byte *pRecord;
+      |     ^~~~
+C:/msys64/ucrt64/include/c++/15.2.0/cstddef:75:14: note: candidates are: 'enum class std::byte'
+   75 |   enum class byte : unsigned char {};
+      |              ^~~~
+C:/msys64/ucrt64/include/rpcndr.h:93:25: note:                 'typedef unsigned char byte'
+   93 |   typedef unsigned char byte;
+      |                         ^~~~

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la d:/PBL/*.cpp d:/PBL/*.h d:/PBL/*.exe)",
+      "Bash(ls -la d:/PBL/*.dat)",
+      "Bash(g++ -o atm.exe main.cpp ATM.cpp Utils.cpp Shutdown.cpp StartUp.cpp)"
+    ]
+  }
+}

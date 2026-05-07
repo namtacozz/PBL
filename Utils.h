@@ -5,7 +5,8 @@
 
 // Các hằng số dùng chung thay thế cho biến toàn cục
 const int MAX_ACCOUNTS = 100;
-const int MAX_TRANSACTIONS = 5;
+const int MAX_TRANS_PER_DAY = 5;         // Giới hạn số giao dịch mỗi khách hàng / ngày
+const int MAX_TOTAL_TRANSACTIONS = 1000; // Kích thước mảng lưu log giao dịch trong ngày
 const double MAX_DAILY_AMOUNT = 20000000.0; 
 void loadSecretCode(std::string& code);
 void saveSecretCode(std::string code);

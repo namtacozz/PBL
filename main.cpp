@@ -19,10 +19,10 @@ int main() {
     int totalAccounts = 0;
 
     // 2. Mảng dữ liệu Giao Dịch
-    string transAccountNumbers[MAX_TRANSACTIONS];
-    string transTypes[MAX_TRANSACTIONS];
-    double transAmounts[MAX_TRANSACTIONS];
-    string transTimestamps[MAX_TRANSACTIONS];
+    string transAccountNumbers[MAX_TOTAL_TRANSACTIONS];
+    string transTypes[MAX_TOTAL_TRANSACTIONS];
+    double transAmounts[MAX_TOTAL_TRANSACTIONS];
+    string transTimestamps[MAX_TOTAL_TRANSACTIONS];
     int totalTransactions = 0;
 
     // 3. Hệ thống thời gian giả lập

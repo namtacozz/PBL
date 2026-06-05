@@ -1,4 +1,4 @@
-#include "Utils.h"
+#include "../include/Utils.h"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -7,7 +7,7 @@
 using namespace std;
 
 void loadSystemDate(int& d, int& m, int& y) {
-    ifstream file("date.dat");
+    ifstream file("data/date.dat");
     if (file.is_open()) {
         file >> d >> m >> y;
         file.close();
@@ -17,7 +17,7 @@ void loadSystemDate(int& d, int& m, int& y) {
 }
 
 void saveSystemDate(int d, int m, int y) {
-    ofstream file("date.dat");
+    ofstream file("data/date.dat");
     if (file.is_open()) {
         file << d << " " << m << " " << y;
         file.close();
@@ -94,7 +94,7 @@ string getHiddenInput() {
 }
 
 void loadSecretCode(string& code) {
-    ifstream file("secret.dat");
+    ifstream file("data/secret.dat");
     if (file.is_open()) {
         file >> code;
         file.close();
@@ -104,7 +104,7 @@ void loadSecretCode(string& code) {
 }
 
 void saveSecretCode(string code) {
-    ofstream file("secret.dat");
+    ofstream file("data/secret.dat");
     if (file.is_open()) {
         file << code;
         file.close();

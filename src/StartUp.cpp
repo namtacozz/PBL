@@ -1,5 +1,5 @@
-#include "StartUp.h"
-#include "Utils.h"
+#include "../include/StartUp.h"
+#include "../include/Utils.h"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -22,7 +22,7 @@ bool authenticateSecret(string currentSecretCode) {
 }
 
 void loadAccountData(string accNums[], string pins[], double bals[], int dailyCnts[], bool locks[], double dailyAmts[], int& totalAccs) {
-    ifstream file("accounts.dat");
+    ifstream file("data/accounts.dat");
     if (!file.is_open()) {
         totalAccs = 5;
         string accs[] = {"1001", "1002", "1003", "1004", "1005"};

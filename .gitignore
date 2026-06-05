@@ -1,7 +1,28 @@
-/transactions_01_06_2005.dat
-/transactions_02_06_2005.dat
-/transactions_03_06_2005.dat
-/transactions_04_06_2005.dat
-/transactions_05_06_2005.dat
-/transactions_30_05_2005.dat
-/transactions_31_05_2005.dat
+# ========================
+# Build Artifacts
+# ========================
+build/
+*.exe
+*.obj
+*.o
+*.out
+
+# ========================
+# Runtime Data Files
+# ========================
+data/*.dat
+
+# ========================
+# IDE / Editor
+# ========================
+.vscode/
+.vs/
+*.suo
+*.user
+
+# ========================
+# OS Generated
+# ========================
+Thumbs.db
+Desktop.ini
+.DS_Store

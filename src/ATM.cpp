@@ -1,6 +1,6 @@
-#include "ATM.h"
-#include "Utils.h"
-#include "Shutdown.h"
+#include "../include/ATM.h"
+#include "../include/Utils.h"
+#include "../include/Shutdown.h"
 #include <iostream>
 #include <string>
 

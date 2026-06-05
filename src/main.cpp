@@ -1,7 +1,7 @@
-#include "StartUp.h"
-#include "ATM.h"
-#include "Shutdown.h"
-#include "Utils.h"
+#include "../include/StartUp.h"
+#include "../include/ATM.h"
+#include "../include/Shutdown.h"
+#include "../include/Utils.h"
 
 using namespace std;
 

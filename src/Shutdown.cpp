@@ -1,5 +1,5 @@
-#include "Shutdown.h"
-#include "Utils.h"
+#include "../include/Shutdown.h"
+#include "../include/Utils.h"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -7,7 +7,7 @@
 using namespace std;
 
 void updateAccountsData(string accNums[], string pins[], double bals[], bool locks[], int totalAccs, bool silent) {
-    ofstream file("accounts.dat");
+    ofstream file("data/accounts.dat");
     if (file.is_open()) {
         for (int i = 0; i < totalAccs; i++) {
             file << accNums[i] << " " << pins[i] << " " << (long long)bals[i] << " "
@@ -20,7 +20,7 @@ void updateAccountsData(string accNums[], string pins[], double bals[], bool loc
 
 // LƯU RIÊNG FILE THEO TỪNG NGÀY
 void saveTransactionData(string tAccs[], string tTypes[], double tAmts[], string tTimes[], int tTotal, int d, int m, int y) {
-    string fileName = "transactions_" + getFileDateString(d, m, y) + ".dat";
+    string fileName = "data/transactions_" + getFileDateString(d, m, y) + ".dat";
     ofstream file(fileName, ios::app);
     if (file.is_open()) {
         file << "--- LOG: " << getCurrentTimestamp(d, m, y) << " ---\n";

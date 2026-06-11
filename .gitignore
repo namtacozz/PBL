@@ -17,6 +17,7 @@ data/*.dat
 # ========================
 .vscode/
 .vs/
+.claude/
 *.suo
 *.user
 

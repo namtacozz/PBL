@@ -11,7 +11,8 @@ build/
 # Runtime Data Files
 # ========================
 data/*.dat
-
+AGENTS.md
+LVTN.md
 # ========================
 # IDE / Editor
 # ========================
